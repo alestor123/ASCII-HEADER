@@ -1,0 +1,44 @@
+{
+  "name": "ascii-header",
+  "version": "1.0.0",
+  "description": "This is a simple code for adding ascii art header to the code(as comments)",
+  "main": "App.js",
+  "funding": "https://alestor123.is-a.dev/donate",
+  "bin": "cli.js",
+  "scripts": {
+    "test": "standard && node test.js | tap-spec",
+    "example": "node run.js",
+    "lint": "standard . --fix"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "App.js",
+    "cli.js",
+    "opt.js",
+    "assets/man/help.man"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alestor123/ASCII-HEADER.git"
+  },
+  "author": "Alestor Aldous",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alestor123/ASCII-HEADER/issues"
+  },
+  "homepage": "https://github.com/alestor123/ASCII-HEADER#readme",
+  "dependencies": {
+    "ascii-box": "^1.1.2",
+    "chalk": "^4.1.0",
+    "figlet": "^1.5.0",
+    "minimist": "^1.2.6",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3",
+    "tap": "^15.0.9",
+    "tap-spec": "^5.0.0"
+  }
+}
