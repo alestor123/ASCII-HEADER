@@ -19,7 +19,7 @@
 ## API
 
 ```
-const header = require('./App')
+const header = require('ascii-header')
 const data = { 
 name: 'ascii-header',
 version: '1.0.0',
