@@ -39,7 +39,7 @@ module.exports = (paths, data) => {
   return main
 }
 function checkArray (arr) {
-  return arr.every(path => existsSync(resolve(path)) && (statSync(resolve(path)).isFile() ? extname(resolve(path)) === '.js' : false))
+  return arr.every(path => existsSync(resolve(path)) && (statSync(resolve(path)).isFile() ? ((extname(resolve(path)) === '.js') || (extname(resolve(path)) === '.ts')) : false))
 }
 // https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url
 function isValidHttpUrl (string) {

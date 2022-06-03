@@ -3,7 +3,8 @@ const tap = require('tap')
 const header = require('./App')
 const { readFileSync } = require('fs')
 const { resolve } = require('path')
-const read = readFileSync(resolve('./test/test.js'), 'utf8')
+const readjs = readFileSync(resolve('./test/test.js'), 'utf8')
+const readts = readFileSync(resolve('./test/test.ts'), 'utf8')
 const output = readFileSync(resolve('./test/output'), 'utf8')
 
 tap.test('Error test', async ({ throws }) => {
@@ -17,7 +18,7 @@ tap.test('Error test', async ({ throws }) => {
 })
 
 tap.test('Output test', ({ equal, end }) => {
-  equal(read.includes(output), true)
+  equal(readts.includes(output) && readjs.includes(output), true)
   end()
 })
 // add keywords

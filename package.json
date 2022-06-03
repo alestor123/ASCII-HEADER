@@ -1,6 +1,6 @@
 {
   "name": "ascii-header",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a simple code for adding ascii art header to the code(as comments)",
   "main": "App.js",
   "funding": "https://alestor123.is-a.dev/donate",
