@@ -20,3 +20,4 @@ tap.test('Output test', ({ equal, end }) => {
   equal(read.includes(output), true)
   end()
 })
+// add keywords
